@@ -1,0 +1,15 @@
+package com.mercury.tours;
+
+import org.junit.jupiter.api.Test;
+
+public class Mercury_Sign_On {
+
+	@Test
+	public void Sign_On_ValidCred()
+	{
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium training\\Selenium software\\chromedriver_win32");
+		ChromeDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		
+	}
+}

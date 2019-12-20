@@ -1,0 +1,9 @@
+package com.mercury.tours;
+
+import org.testng.annotations.Test;
+
+public class Paramter_example {
+  @Test
+  public void f() {
+  }
+}

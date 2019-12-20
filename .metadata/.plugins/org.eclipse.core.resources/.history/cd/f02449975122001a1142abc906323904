@@ -1,0 +1,17 @@
+package com.mercury.tours;
+
+import org.testng.annotations.DataProvider;
+
+public class navigate_all_links_onPage {
+	
+	@DataProvider(name="Sign_On")	
+	public Object[][] getDataFromDataprovider(){
+		
+		return new Object[][] {
+			//{"mngr238457","YbehEmY"},		
+			{"dixit","dixit"},
+			{"testing","testing"}
+			//{"mngr238457","YbehEmY"}
+		};
+	}
+}

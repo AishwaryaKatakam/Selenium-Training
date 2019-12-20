@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" thread-count="3" parallel="tests">
+  <test name="Test">
+    <classes>
+      <class name="com.mercury.tours.Smoke_test_suite"/>
+      <class name="com.mercury.tours.jquery_dragAndDrop"/>
+      <class name="com.mercury.tours.guru99_testData"/>
+      <class name="com.mercury.tours.hdfc"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

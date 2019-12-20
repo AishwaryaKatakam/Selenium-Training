@@ -1,0 +1,39 @@
+package com.mercury.tours;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class mousehover {
+	ChromeDriver driver;
+	
+  @Test
+  public void mousehover_test() {
+	  WebElement element=driver.findElement(By.xpath("//a[contains(text(),'My Account')]"));
+	  Actions action = new Actions(driver);
+	  action.moveToElement(element).build().perform();
+	  //Thread.sleep(6000);
+	  driver.findElementById("signInBtn").click();	  
+  }
+  
+  @BeforeTest
+  public void LaunchBrowser() {
+	  String absolutPath= System.getProperty("user.dir");
+		String filepath=absolutPath+"\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", filepath);
+		//System.setProperty("webdriver.chrome.driver","D:\\Selenium training\\Selenium software\\chromedriver_win32\\chromedriver.exe");
+		driver= new ChromeDriver();
+		driver.manage().window().maximize();		
+		driver.get("http://www.yatra.com");
+  }
+
+  @AfterTest
+  public void CloseBrowser() {
+	  driver.quit();
+  }
+
+}

@@ -1,0 +1,9 @@
+package com.mercury.tours;
+
+public class Mercury_Sign_On {
+
+	public void Sign_On_ValidCred()
+	{
+		
+	}
+}

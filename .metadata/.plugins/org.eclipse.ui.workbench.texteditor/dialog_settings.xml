@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="driver.findElement(By.linkText(&quot;SIGN-ON&quot;)).click();"/>
+		<list key="findhistory">
+			<item value="driver.findElement(By.linkText(&quot;SIGN-ON&quot;)).click();"/>
+		</list>
+	</section>
+</section>

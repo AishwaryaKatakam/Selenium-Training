@@ -1,0 +1,10 @@
+package com.mercury.tours;
+
+public class Mercury_Sign_On {
+
+	public void Sign_On_ValidCred()
+	{
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium training\\Selenium software\\chromedriver_win32");
+		
+	}
+}
